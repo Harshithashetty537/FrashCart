@@ -1,0 +1,61 @@
+#navbar{display: flex;
+    justify-content: space-between;
+    background-color: black;
+     color: white;
+     padding: 10px;
+
+}
+#Order{position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     padding: 150px;
+     margin-top: 20px;
+     padding-bottom: 170px;
+
+}
+#Order_button{
+    background-color: rgb(189, 184, 184);
+ border: none;padding: 10px;
+}
+#our_menu{
+    background-color: gainsboro;
+    padding-top: 20px;padding-bottom: 30px;
+}
+#espresso{
+    border: 1px solid transparent;
+     padding: 20px; 
+     background-color: white;
+     height: 50px;
+      border-radius: 5px;
+
+}
+#Cappuccino{
+    border: 1px solid transparent;
+     padding: 20px;
+      background-color: white;
+      height: 50px; border-radius: 5px;
+}
+#Latte{
+    border: 1px solid transparent; 
+    padding: 20px;
+     background-color: white;
+     height: 50px;
+      border-radius: 5px;
+}
+#nameBox{
+    border:1px solid gray;
+     width:400px;
+     height:25px;
+}
+#emailBox{
+    border:1px solid gray;
+    width:400px;
+    height:25px;
+}
+#send_button{
+    background-color: black;
+     color: white;
+      padding: 5px 15px 5px 15px; 
+      border-radius: 5px;
+}

@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="freshcart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        .freshCart {
+            text-align: left;
+        }
+
+        @media(max-width:900px) {
+            .searchbar {
+                display: none;
+            }
+        }
+
+        @media(max-width:900px) {
+            #icons {
+                flex-direction: column;
+            }
+        }
+
+        @media(max-width:900px) {
+            .cards {
+                flex-direction: column;
+            }
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 10px;
+            top: 19%;
+            transform: translateY(-50%);
+            border: none;
+            background-color: white;
+        }
+    </style>
+
+
+</head>
+
+
+<body style="font-family: 'inter'sans-serif;padding: 0px 50px ;" class="container">
+    <div style="background-color:rgb(205, 218, 223); margin-left: -50px;margin-right: -50px;" id="header"> Super Value Deals-Save mote with coupons</div>
+    <div id="secondbar" style="display: flex;justify-content: space-between;">
+        <img src=https://freshcart.codescandy.com/assets/images/logo/freshcart-logo.svg>
+        <div class="searchbar" style=" position: relative;
+        margin: 20px;
+        ">
+            <input class="bar" type="search" placeholder="Search for products"
+                style="padding: 10px; width: 300px; outline: none;">
+            <button type="submit" class="search-icon">
+                <img src="search.png" alt="Search"
+                    style="width:20px;height: 20px;color: black; position:absolute;right:  130px;">
+            </button>
+            <div><button class="bar1" gap="100px"><span>Location</span>
+                    <img src="location.png" alt="location" style="width: 18px;
+            height: 15px;
+            color: black;
+            position: absolute;
+            right: 90px;">
+                </button></div>
+        </div>
+        <div id="icons">
+            <img src="heart.png" style="width: 20px;height: 20px;">
+            <img src="profile.png" style="width: 20px;height: 20px;">
+            <img src="shopping-bag.png" style="width: 20px;height: 20px;">
+        </div>
+
+    </div><br><br>
+
+    <div id="navbar" style="display: flex; gap: 20px;">
+        <div class="department" style="display: flex;">
+            <button id="allDepartment">
+                <div style=" text-align: center; position: relative;
+        top: 10px; font-size: 15px;"><b>All Departments</b></div>
+                <div> <img src="menu.png" style="width: 15px; display: flex;
+      position: relative;bottom: 8px;color: white;left: 12px;"></div>
+            </button>
+        </div>
+        <select style="border: none;">
+            <option>Home</option>
+            <option>Home1</option>
+            <option>home2</option>
+            <option>home3</option>
+            <option>home4</option>
+        </select>
+        <select style="border: none; width: 60px;">
+            <option>Shop</option>
+            <option>shop Grid</option>
+            <option>shop grid3</option>
+            <option>shop list</option>
+            <option>shop wide</option>
+        </select>
+        <select style="border: none;">
+            <option>Stores</option>
+            <option>store List</option>
+            <option>Store Grid</option>
+        </select>
+        <select style="border: none; width: 100px;">
+            <option>Mega menu</option>
+            <optgroup label=" Dairy, Bread & Eggs">
+                <option>Butter</option>
+                <option>Milk Drinks</option>
+                <option>Curd & Yogurt</option>
+                <option>Eggs</option>
+            </optgroup>
+        </select>
+        <select style="border: none;width: 60px;">
+            <option>Stores</option>
+            <option>store List</option>
+            <option>Store Grid</option>
+            <option>Store Single</option>
+        </select>
+        <select style="border: none;">
+            <option>Pages</option>
+        </select>
+        <select style="border: none;">
+            <option>Account</option>
+        </select>
+    </div>
+
+    <hr  style="margin:30px -50px 30px -50px"/>
+    <div id="background-img">
+        <div id="background-text">
+            <h1 style="font-size: 50px;">SuperMarket For<br> Fresh Grocery</h1>
+        </div>
+        <h5 class="paragraph">Introduction a new model for online<br>grocery shopping and convenient home<br>delivery.
+        </h5>
+        <div>
+            <button class="shopnow-button">Shop Now -></button>
+        </div>
+    </div><br>
+    <div id="feature">
+        <h2>Feature Categories</h2>
+    </div>
+    <div id="slide-items" style="display: flex;flex-wrap: wrap; justify-content: center;">
+        <div class="category">
+            <img src="category-atta-rice-dal.jpg" alt="att-rice-pic" style="padding-top: 30px;">
+            <div class="text-area" style="text-align: center;"> Atta,Rice & Dal</div>
+        </div>
+        <div class="category">
+            <img src="category-bakery-biscuits (1).jpg" alt="att-rice-pic" style="padding-top: 30px;">
+            <div class="text-area" style="text-align: center;">Bakery,Biscuits</div>
+        </div>
+        <div class="category">
+            <img src="category-chicken-meat-fish.jpg" alt="att-rice-pic" style="padding-top: 30px;">
+            <div class="text-area" style="text-align: center;">Chicken,Meat & Fish</div>
+        </div>
+        <div class="category">
+            <img src="category-pet-care.jpg" alt="att-rice-pic" style="padding-top: 30px;">
+            <div class="text-area" style="text-align: center;">Pet Care</div>
+        </div>
+    </div>
+
+    <div class="cards" style="display: flex; gap: 30px; justify-content: center;">
+        <div class="background1-img">
+            <div class="background1-text">
+                <h4 style="font-size: 30px;">Fruits & Vegetables</h4>
+            </div>
+            <h5 class="paragraph1">Get Upto 30% Off </h5>
+            <div>
+                <button class="shopnow-button1">Shop Now</button>
+            </div>
+        </div>
+        <div class="background1-img">
+            <div class="background1-text">
+                <h4 style="font-size: 30px;">Freshly Baked Buns</h4>
+            </div>
+            <h5 class="paragraph1">Get Upto 50% Off </h5>
+            <div>
+                <button class="shopnow-button1">Shop Now</button>
+            </div>
+        </div>
+    </div>
+    <div id="products">
+        <h2>Popular Products</h2>
+    </div>
+    <div class="popularProductsss" style="display: flex;flex-wrap: wrap; justify-content: center;gap: 10px;">
+        <div class="category1">
+            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-1.jpg" alt="att-rice-pic"
+                style="height: 200px;padding-left: 20px;">
+            <div class="text-area">
+                <div style="color: gray;bottom: 50px;"><b>Snack & Munchies</b></div>
+                <div style="font-size: medium;"><b>Haldiram's Sev Bhujia</b></div>
+            </div>
+            <div class="star" style="margin:10px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <span style="font-size: small;color: gray;padding-bottom:2px;">4.5(149)</span>
+                <br><br>
+                <div
+                    style="margin: 10px; font-size: small; display: flex;justify-content: space-between;align-content: center;">
+                    <div><span class="text-dark">$18</span>
+                        <span class="text-decoration-line-through">$24</span>
+                    </div>
+                    <div>
+                        <input type="button" value="+ Add"
+                            style="background-color: green;color:white;font-size: 15px; border: none;height: 20px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="category1">
+            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-2.jpg" alt="att-rice-pic"
+                style="height: 200px;padding-left: 20px;">
+            <div class="text-area">
+                <div style="color: gray;bottom: 50px;"><b>Bakery & Biscuits</b></div>
+                <div style="font-size: medium;"><b>NutriChoice Digestive</b></div>
+            </div>
+            <div class="star" style="margin:10px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <span style="font-size: small;color: gray;padding-bottom:2px;">4.5(149)</span>
+                <br><br>
+                <div
+                    style="margin: 10px; font-size: small; display: flex;justify-content: space-between;align-content: center;">
+                    <div><span class="text-dark">$24</span>
+                        <!-- <span class="text-decoration-line-through">$24</span> -->
+                    </div>
+                    <div>
+                        <input type="button" value="+ Add"
+                            style="background-color: green;color:white;font-size: 15px; border: none;height: 20px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="category1">
+            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-3.jpg" alt="att-rice-pic"
+                style="height: 200px;padding-left: 20px;">
+            <div class="text-area">
+                <div style="color: gray;bottom: 50px;"><b>Bakery & Biscuits</b></div>
+                <div style="font-size: medium;"><b>Cadbury 5 Star Chocolate</b></div>
+            </div>
+            <div class="star" style="margin:10px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <span style="font-size: small;color: gray;padding-bottom:2px;">5(469)</span>
+                <br><br>
+                <div
+                    style="margin: 10px; font-size: small; display: flex;justify-content: space-between;align-content: center;">
+                    <div><span class="text-dark">$32</span>
+                        <span class="text-decoration-line-through">$35</span>
+                    </div>
+                    <div>
+                        <input type="button" value="+ Add"
+                            style="background-color: green;color:white;font-size: 15px; border: none;height: 20px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="category1">
+            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-4.jpg" alt="att-rice-pic"
+                style="height: 200px;padding-left: 20px;">
+            <div class="text-area">
+                <div style="color: gray;bottom: 50px;"><b>instant Food</b></div>
+                <div style="font-size: medium;"><b>Salted Instant Popcorn</b></div>
+            </div>
+            <div class="star" style="margin:10px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <span style="font-size: small;color: gray;padding-bottom:2px;">5(469)</span>
+                <br><br>
+                <div
+                    style="margin: 10px; font-size: small; display: flex;justify-content: space-between;align-content: center;">
+                    <div><span class="text-dark">$13</span>
+                        <span class="text-decoration-line-through">$15</span>
+                    </div>
+                    <div>
+                        <input type="button" value="+ Add"
+                            style="background-color: green;color:white;font-size: 15px; border: none;height: 20px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="category1">
+            <img src="	https://freshcart.codescandy.com/assets/images/products/product-img-5.jpg" alt="att-rice-pic"
+                style="height: 200px;padding-left: 20px;">
+            <div class="text-area">
+                <div style="color: gray;bottom: 50px;"><b>Snack & Munchies</b></div>
+                <div style="font-size: medium;"><b>Onion Flavour Potato</b></div>
+            </div>
+            <div class="star" style="margin:10px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <span style="font-size: small;color: gray;padding-bottom:2px;">5(469)</span>
+                <br><br>
+                <div
+                    style="margin: 10px; font-size: small; display: flex;justify-content: space-between;align-content: center;">
+                    <div><span class="text-dark">$13</span>
+                        <span class="text-decoration-line-through">$18</span>
+                    </div>
+                    <div>
+                        <input type="button" value="+ Add"
+                            style="background-color: green;color:white;font-size: 15px; border: none;height: 20px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+    
+        <div class="category1">
+            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-6.jpg
+            " alt="att-rice-pic" style="height: 200px;padding-left: 20px;">
+            <div class="text-area">
+                <div style="color: gray;bottom: 50px;"><b>dairy,Bread & Eggs</b></div>
+                <div style="font-size: medium;"><b>Blueberry Greek Yogurt</b></div>
+            </div>
+            <div class="star" style="margin:10px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <span style="font-size: small;color: gray;padding-bottom:2px;">5(469)</span>
+                <br><br>
+                <div
+                    style="margin: 10px; font-size: small; display: flex;justify-content: space-between;align-content: center;">
+                    <div><span class="text-dark">$13</span>
+                        <span class="text-decoration-line-through">$18</span>
+                    </div>
+                    <div>
+                        <input type="button" value="+ Add"
+                            style="background-color: green;color:white;font-size: 15px; border: none;height: 20px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="category1">
+            <img src="	https://freshcart.codescandy.com/assets/images/products/product-img-7.jpg
+            " alt="att-rice-pic" style="height: 200px;padding-left: 20px;">
+            <div class="text-area">
+                <div style="color: gray;bottom: 50px;"><b>dairy,Bread & Eggs</b></div>
+                <div style="font-size: medium;"><b>Britannia Cheese Slices</b></div>
+            </div>
+            <div class="star" style="margin:10px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <span style="font-size: small;color: gray;padding-bottom:2px;">5(469)</span>
+                <br><br>
+                <div
+                    style="margin: 10px; font-size: small; display: flex;justify-content: space-between;align-content: center;">
+                    <div><span class="text-dark">$24</span>
+                        <!-- <span class="text-decoration-line-through">$18</span> -->
+                    </div>
+                    <div>
+                        <input type="button" value="+ Add"
+                            style="background-color: green;color:white;font-size: 15px; border: none;height: 20px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="category1">
+            <img src="	https://freshcart.codescandy.com/assets/images/products/product-img-7.jpg
+            " alt="att-rice-pic" style="height: 200px;padding-left: 20px;">
+            <div class="text-area">
+                <div style="color: gray;bottom: 50px;"><b>Instant Food </b></div>
+                <div style="font-size: medium;"><b>Kellogg's Original Cereals</b></div>
+            </div>
+            <div class="star" style="margin:10px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <span style="font-size: small;color: gray;padding-bottom:2px;">5(469)</span>
+                <br><br>
+                <div
+                    style="margin: 10px; font-size: small; display: flex;justify-content: space-between;align-content: center;">
+                    <div><span class="text-dark">$32</span>
+                        <span class="text-decoration-line-through">$35</span>
+                    </div>
+                    <div>
+                        <input type="button" value="+ Add"
+                            style="background-color: green;color:white;font-size: 15px; border: none;height: 20px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="category1">
+            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-9.jpg
+            " alt="att-rice-pic" style="height: 200px;padding-left: 20px;">
+            <div class="text-area1" style="padding: 10px 0px 0px 10px;">
+                <div style="color: gray;bottom: 50px;"><b>Snack & Munchies</b></div>
+                <div style="font-size: large;"><b>Sluup Millet Chocolate</b></div>
+            </div>
+            <div class="star" style="margin:10px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <span style="font-size: small;color: gray;padding-bottom:2px;">5(469)</span>
+                <br><br>
+                <div
+                    style="margin: 10px; font-size: small; display: flex;justify-content: space-between;align-content: center;">
+                    <div><span class="text-dark">$3</span>
+                        <span class="text-decoration-line-through">$5</span>
+                    </div>
+                    <div>
+                        <input type="button" value="+ Add"
+                            style="background-color: green;color:white;font-size: 15px; border: none;height: 20px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="category1">
+            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-10.jpg
+            " alt="att-rice-pic" style="height: 200px;padding-left: 20px;">
+            <div class="text-area">
+                <div style="color: gray;bottom: 50px;"><b>Dairy, Bread & Eggs</b></div>
+                <div style="font-size: large;"><b>Amul Butter-500g</b></div>
+            </div>
+            <div class="star" style="margin:10px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                <span style="font-size: small;color: gray;padding-bottom:2px;">5(469)</span>
+                <br><br>
+                <div
+                    style="margin: 10px; font-size: small; display: flex;justify-content: space-between;align-content: center;">
+                    <div><span class="text-dark">$13</span>
+                        <span class="text-decoration-line-through">$18</span>
+                    </div>
+                    <div>
+                        <input type="button" value="+ Add"
+                            style="background-color: green;color:white;font-size: 15px; border: none;height: 20px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div id="best">
+        <h2>Daily Best Sells</h2>
+    </div>
+    <div class="Daily-best-sells" style="display: flex;flex-wrap: wrap;justify-content: center;gap: 10px;">
+        <div class="background_beans">
+            <div id="background-beans-text" style="color: white;">
+                <h2 style="font-size: 30px;">100% Organic Coffee Beans.<br> Fresh Grocery</h2>
+            </div>
+            <h6 class="paragraph" style="color: white;">Get the best deal before close
+            </h6>
+            <div>
+                <button class="shopnow-button1" style="background-color: green;border: none; top: 300px;">Shop
+                    Now</button>
+            </div>
+        </div>
+        <div class="category2" style="border: 1px solid black;border-radius: 10px;">
+            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-11.jpg" alt="att-rice-pic"
+                style="height: 200px;padding-left: 30px;">
+            <div class="text-area1" style="padding-left: 10px;">
+                <div style="color: gray;bottom: 50px;"><b>Tea, Coffee & Drinks</b></div>
+                <div style="font-size: larger;"><b>Roast Ground Coffee</b></div>
+            </div>
+            <div class="star" style="margin:10px;">
+                <div
+                    style="margin: 10px; font-size: small; display: flex;justify-content: space-between;align-content: center;">
+                    <div><span class="text-dark">$13</span>
+                        <span class="text-decoration-line-through">$18</span>
+                    </div>
+                    <div class="star" style="padding-bottom: 10px; padding-right: 10px;">
+                        <img src="star.png" style="width: 12.5px;height: 12.5px; ">
+                        <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                        <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                        <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                        <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                        <span style="font-size: small;color: gray;padding-bottom:2px;">5(469)</span>
+                    </div>
+                </div>
+                <div>
+                    <input type="button" value="+Add to cart"
+                        style="background-color: green;color:white;font-size: 15px; border: none;height: 30px;width: 200px;margin-left: 10px;border-radius: 10px;">
+                </div><br>
+                <div style="display: flex;flex-wrap: wrap; justify-content: center;">
+                    <div class="time" style="display: flex;">
+                        <div class="days"
+                            style="border: 1px solid gray;width: 62px;height: 58px; border-radius: 10px;margin: 10px;">
+                            <div style="text-align: center;padding-top: 10px;">1651<span
+                                    style="color: gray;"><br>Days</span></div>
+                        </div>
+                        <div class="days"
+                            style="border: 1px solid gray;width: 62px;height: 58px; border-radius: 10px;margin: 10px;">
+                            <div style="text-align: center;padding-top: 10px;">5<span
+                                    style="color: gray;"><br>Hours</span>
+                            </div>
+                        </div>
+                        <div class="days"
+                            style="border: 1px solid gray;width: 62px;height: 58px; border-radius: 10px;margin: 10px;">
+                            <div style="text-align: center;padding-top: 10px;">42<span
+                                    style="color: gray;"><br>Mins</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sec"
+                        style="border: 1px solid gray;width: 62px;height: 58px; border-radius: 10px;margin: 10px;">
+                        <div style="text-align: center;padding-top: 10px;">42<span style="color: gray;"><br>sec</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category2" style="border: 1px solid black;border-radius: 10px;">
+            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-12.jpg" alt="att-rice-pic"
+                style="height: 200px;padding-left: 10px;">
+            <div class="text-area1" style="padding-left: 10px; height: 46.17px;">
+                <div style="color: gray;bottom: 50px;"><b>Fruits & Vegetables</b></div>
+                <div style="font-size: larger;"><b>Crushed Tomatoes</b></div>
+            </div>
+            <div class="star" style="margin:10px;">
+                <!-- <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                    <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                    <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                    <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                    <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                    <span style="font-size: small;color: gray;padding-bottom:2px;">5(469)</span> -->
+                <!-- <br><br> -->
+                <div
+                    style="margin: 10px; font-size: small; display: flex;justify-content: space-between;align-content: center;">
+                    <div><span class="text-dark">$13</span>
+                        <span class="text-decoration-line-through">$18</span>
+                    </div>
+                    <div class="star">
+                        <img src="star.png" style="width: 12.5px;height: 12.5px; ">
+                        <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                        <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                        <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                        <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                        <span style="font-size: small;color: gray;padding-bottom:2px;">5(469)</span>
+                    </div>
+                </div>
+                <div>
+                    <input type="button" value="+Add to cart"
+                        style="background-color: green;color:white;font-size: 15px; border: none;height: 30px;width: 200px;margin-left: 10px;border-radius: 10px;">
+                </div><br>
+                <div style="display: flex;flex-wrap: wrap; justify-content: center;">
+                    <div class="time" style="display: flex;">
+                        <div class="days"
+                            style="border: 1px solid gray;width: 62px;height: 58px; border-radius: 10px;margin: 10px;">
+                            <div style="text-align: center;padding-top: 10px;">1651<span
+                                    style="color: gray;"><br>Days</span></div>
+                        </div>
+                        <div class="days"
+                            style="border: 1px solid gray;width: 62px;height: 58px; border-radius: 10px;margin: 10px;">
+                            <div style="text-align: center;padding-top: 10px;">5<span
+                                    style="color: gray;"><br>Hours</span>
+                            </div>
+                        </div>
+                        <div class="days"
+                            style="border: 1px solid gray;width: 62px;height: 58px; border-radius: 10px;margin: 10px;">
+                            <div style="text-align: center;padding-top: 10px;">42<span
+                                    style="color: gray;"><br>Mins</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sec"
+                        style="border: 1px solid gray;width: 62px;height: 58px; border-radius: 10px;margin: 10px;">
+                        <div style="text-align: center;padding-top: 10px;">42<span style="color: gray;"><br>sec</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="category2" style="border: 1px solid black;border-radius: 10px; ">
+            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-13.jpg" alt="att-rice-pic"
+                style="height: 200px;padding-left: 10px;">
+            <div class="text-area1" style="padding-left: 10px;">
+                <div style="color: gray;bottom: 50px;"><b>Fruits & Vegetables</b></div>
+                <div style="font-size: larger;"><b>Golden Pineapple</b></div>
+            </div>
+            <div class="star" style="margin:10px;">
+                <div
+                    style="margin: 10px; font-size: small; display: flex;justify-content: space-between;align-content: center;">
+                    <div><span class="text-dark">$13</span>
+                        <span class="text-decoration-line-through">$18</span>
+                    </div>
+                    <div class="star">
+                        <img src="star.png" style="width: 12.5px;height: 12.5px; ">
+                        <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                        <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                        <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                        <img src="star.png" style="width: 12.5px;height: 12.5px;">
+                        <span style="font-size: small;color: gray;padding-bottom:2px;">5(469)</span>
+                    </div>
+                </div>
+                <div>
+                    <input type="button" value="+Add to cart"
+                        style="background-color: green;color:white;font-size: 15px; border: none;height: 30px;width: 200px;margin-left: 10px;border-radius: 10px;">
+                </div><br>
+                <div style="display: flex;flex-wrap: wrap;justify-content: center;">
+                    <div class="time" style="display: flex;">
+                        <div class="days"
+                            style="border: 1px solid gray;width: 62px;height: 58px; border-radius: 10px;margin: 10px;">
+                            <div style="text-align: center;padding-top: 10px;">1651<span
+                                    style="color: gray;"><br>Days</span></div>
+                        </div>
+                        <div class="days"
+                            style="border: 1px solid gray;width: 62px;height: 58px; border-radius: 10px;margin: 10px;">
+                            <div style="text-align: center;padding-top: 10px;">5<span
+                                    style="color: gray;"><br>Hours</span>
+                            </div>
+                        </div>
+                        <div class="days"
+                            style="border: 1px solid gray;width: 62px;height: 58px; border-radius: 10px;margin: 10px;">
+                            <div style="text-align: center;padding-top: 10px;">42<span
+                                    style="color: gray;"><br>Mins</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sec"
+                        style="border: 1px solid gray;width: 62px;height: 58px; border-radius: 10px;margin: 10px;align-items: center;">
+                        <div style="text-align: center;padding-top: 10px;">42<span style="color: gray;"><br>sec</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom" style="display: flex;flex-wrap: wrap;justify-content: space-between; margin:60px 60px 0px 60px">
+        <div id="clock" style="border: 1px soild black;">
+            <img src="https://freshcart.codescandy.com/assets/images/icons/clock.svg
+        " alt="clk" style="width: 40px;height: 40px;">
+            <div id="clk-exp" style="width:250px">
+                <h1>10 minute grocery now</h1>
+                Get your order delivered to your doorstep at the earliest from FreshCart pickup stores near you.
+            </div>
+        </div>
+        <div id="gift" style="border: 1px soild black;">
+            <img src="https://freshcart.codescandy.com/assets/images/icons/gift.svg
+        " alt="clk" style="width: 40px;height: 40px;">
+            <div id="clk-exp" style="width:250px">
+                <h1>Best Prices & Offers</h1>
+                Cheaper prices than your local supermarket, great cashback offers to top it off. Get best pricess &
+                offers.
+            </div>
+        </div>
+        <div id="sort" style="border: 1px soild black;">
+            <img src="https://freshcart.codescandy.com/assets/images/icons/package.svg
+        " alt="clk" style="width: 40px;height: 40px;">
+            <div id="clk-exp" style="width:250px">
+                <h1>Wide Assortment</h1>
+                Choose from 5000+ products across food, personal care, household, bakery, veg and non-veg & other
+                categories.
+            </div>
+        </div>
+        <div id="return" style="border: 1px soild black;">
+            <img src="https://freshcart.codescandy.com/assets/images/icons/refresh-cw.svg
+        " alt="clk" style="width: 40px;height: 40px;">
+            <div id="clk-exp" style="width:250px">
+                <h1>Easy Returns</h1>
+                Not satisfied with a product? Return it at the doorstep & get a refund within hours. No questions
+                asked<span style="color: green;"> policy .</span>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="entire-col" style="display: flex;flex-wrap: wrap;justify-content: space-between; background-color: #f0f3f2; ;">
+        <div class="row-1">
+            <h4 style="margin-left:30px ;margin-bottom:0px;"> Categories</h4>
+            <div class="col-1" style="display: flex; color: gray;">
+                <ul>
+                    <li class="list">Vegetables & Fruits</li>
+                    <li class="list">Breakfast & instant food</li>
+                    <li class="list">Breakfast & instant food</li>
+                    <li class="list">Atta, rice & dal</li>
+                    <li class="list">Sauces & spreads</li>
+                    <li class="list">Organic & gourmet</li>
+                    <li class="list">Baby care</li>
+                    <li class="list">Cleaning essentials</li>
+                    <li class="list"> Personal care</li>
+                </ul>
+                <ul>
+                    <li class="list">Dairy, bread & eggs</li>
+                    <li class="list">Cold drinks & juices</li>
+                    <li class="list">Tea, coffee & drinks</li>
+                    <li class="list">Masala, oil & more</li>
+                    <li class="list">Chicken, meat & fish</li>
+                    <li class="list">Paan corner</li>
+                    <li class="list">Pharma & wellness</li>
+                    <li class="list">Home & office</li>
+                    <li class="list">Pet care</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row-2">
+            <h4 style="margin-left:30px ;margin-bottom:0px;"> Get to know us</h4>
+            <ul style="color: gray;">
+                <li class="list">Company</li>
+                <li class="list">About</li>
+                <li class="list">Blog</li>
+                <li class="list">Help Center</li>
+                <li class="list"> Our Value</li>
+            </ul>
+        </div>
+        <div class="row-3">
+            <h4 style="margin-left:30px ;margin-bottom:0px;"> For Consumers</h4>
+            <ul style="color: gray;">
+                <li class="list">Payments</li>
+                <li class="list">Shipping</li>
+                <li class="list">Product Returns</li>
+                <li class="list">FAQ</li>
+                <li class="list">Shop Checkout</li>
+            </ul>
+        </div>
+        <div class="row-4">
+            <h4 style="margin-left:30px ;margin-bottom:0px;">Become a Shopper</h4>
+            <ul style="color: gray;">
+                <li class="list"> Shopper Opportunities</li>
+                <li class="list">Become a Shopper</li>
+                <li class="list"> Earnings</li>
+                <li class="list">Ideas & Guides</li>
+                <li class="list">New Retailers</li>
+            </ul>
+        </div>
+        <div class="row-5">
+            <h4 style="margin-left:30px ;margin-bottom:0px;"> Freshcart programs</h4>
+            <ul style="color: gray;">
+                <li class="list">Freshcart programs</li>
+                <li class="list">Gift Cards</li>
+                <li class="list">Promos & Coupons</li>
+                <li class="list">Freshcart Ads</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>
